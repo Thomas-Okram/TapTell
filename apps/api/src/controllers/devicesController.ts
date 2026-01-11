@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 import { nanoid } from "nanoid";
 import { DeviceModel } from "../models/Device.js";
-import type { ScopedSchoolRequest } from "../middlewares/schoolScope.ts";
+import type { ScopedSchoolRequest } from "../middlewares/schoolScope.js";
 import { asyncHandler } from "../utils/asyncHandler.js";
 
 export const listDevices = asyncHandler(

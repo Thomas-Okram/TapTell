@@ -1,6 +1,6 @@
 import type { Response, NextFunction } from "express";
 import mongoose from "mongoose";
-import type { AuthedAdminRequest } from "../utils/types.ts";
+import type { AuthedAdminRequest } from "../utils/types.js";
 
 export interface ScopedSchoolRequest extends AuthedAdminRequest {
   schoolScopeId?: mongoose.Types.ObjectId;

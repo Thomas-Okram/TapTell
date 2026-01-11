@@ -1,5 +1,5 @@
 import type { Response, NextFunction } from "express";
-import type { AuthedAdminRequest } from "../utils/types.ts";
+import type { AuthedAdminRequest } from "../utils/types.js";
 
 export type AdminRole = "SUPER_ADMIN" | "SCHOOL_ADMIN";
 

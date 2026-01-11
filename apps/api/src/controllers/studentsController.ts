@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 import { StudentModel } from "../models/Student.js";
 import { CardModel } from "../models/Card.js";
-import type { ScopedSchoolRequest } from "../middlewares/schoolScope.ts";
+import type { ScopedSchoolRequest } from "../middlewares/schoolScope.js";
 import { asyncHandler } from "../utils/asyncHandler.js";
 
 export const listStudents = asyncHandler(

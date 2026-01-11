@@ -2,7 +2,7 @@ import type { Response, NextFunction } from "express";
 import bcrypt from "bcryptjs";
 import { env } from "../config/env.js";
 import { AdminModel } from "../models/Admin.js";
-import type { AuthedAdminRequest } from "../utils/types.ts";
+import type { AuthedAdminRequest } from "../utils/types.js";
 import { verifyAdminToken } from "../utils/token.js";
 
 /**

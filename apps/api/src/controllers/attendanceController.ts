@@ -1,4 +1,4 @@
-import type { ScopedSchoolRequest } from "../middlewares/schoolScope.ts";
+import type { ScopedSchoolRequest } from "../middlewares/schoolScope.js";
 import { AttendanceModel } from "../models/Attendance.js";
 import { StudentModel } from "../models/Student.js";
 import { asyncHandler } from "../utils/asyncHandler.js";
