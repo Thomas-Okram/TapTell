@@ -1,0 +1,27 @@
+{
+  "name": "taptell",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm --workspaces run dev",
+    "build": "npm --workspaces run build",
+    "lint": "npm --workspaces run lint",
+    "typecheck": "npm --workspaces run typecheck",
+    "dev:api": "npm --workspace apps/api run dev",
+    "build:api": "npm --workspace apps/api run build",
+    "start:api": "npm --workspace apps/api run start",
+    "dev:admin": "npm --workspace apps/web-admin run dev",
+    "build:admin": "npm --workspace apps/web-admin run build",
+    "preview:admin": "npm --workspace apps/web-admin run preview",
+    "dev:kiosk": "npm --workspace apps/kiosk run dev",
+    "build:kiosk": "npm --workspace apps/kiosk run build",
+    "preview:kiosk": "npm --workspace apps/kiosk run preview"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11",
+    "tsx": "^4.21.0"
+  }
+}
